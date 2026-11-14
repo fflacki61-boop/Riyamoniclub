@@ -260,7 +260,7 @@
                                 showScreen('screen-human');
                             }
                         } catch(e) {
-                            showToast("Connection Error!");
+                            showToast("Error: " + (e.message || e));
                             showScreen('screen-human');
                         }
                     }, 1500);
